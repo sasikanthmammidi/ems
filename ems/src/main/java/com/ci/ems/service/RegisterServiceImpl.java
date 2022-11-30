@@ -9,8 +9,9 @@ import org.springframework.stereotype.Service;
 import com.ci.ems.dao.RegisterDAO;
 import com.ci.ems.model.EmployeeDTO;
 @Service
-public class RegisterServiceImpl implements IRegistrationService {
+public class RegisterServiceImpl implements IRegisterService {
 	
+	@Autowired
 	RegisterDAO registerDAO;
 	
 	public void register(EmployeeDTO empdto) {

@@ -1,7 +1,9 @@
 package com.ci.ems.dao;
 
-import com.ci.ems.model.EmployeeDTO;
+import org.springframework.stereotype.Repository;
 
+import com.ci.ems.model.EmployeeDTO;
+@Repository
 public class RegisterDAO implements iRegisterDAO {
 
 	@Override

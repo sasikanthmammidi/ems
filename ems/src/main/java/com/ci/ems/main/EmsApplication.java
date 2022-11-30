@@ -10,7 +10,7 @@ import org.springframework.context.annotation.ComponentScan;
 import com.ci.ems.controller.EmsRegistrationController;
 @SpringBootApplication(exclude = {DataSourceAutoConfiguration.class, 
 HibernateJpaAutoConfiguration.class})
-@ComponentScan(basePackages="com.ci.ems")
+@ComponentScan("com.ci.ems")
 public class EmsApplication {
 
     public static void main(String[] args) throws Exception {

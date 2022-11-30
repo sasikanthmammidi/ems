@@ -21,14 +21,15 @@ public class EmsRegistrationController extends BaseEmsController {
 	
 	{
 		RegisterServiceImpl.register(e);
-		
+		System.out.println("register employee service called");
+
 		return "success";
 	}
 	
 	@GetMapping(value = "/employees")
 	@ResponseBody public String getEmployee()
 	{
-		System.out.println("service called");
+		System.out.println("get employee service called");
 		//iLoginService.getEmployees();
 		
 		return "success";
