@@ -1,4 +1,4 @@
-package com.ci.kafkademo;
+package com.ci.ems.test;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
