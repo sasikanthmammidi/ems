@@ -11,7 +11,6 @@ import com.ci.ems.model.EmployeeDTO;
 @Service
 public class RegisterServiceImpl implements IRegistrationService {
 	
-	@Autowired
 	RegisterDAO registerDAO;
 	
 	public void register(EmployeeDTO empdto) {

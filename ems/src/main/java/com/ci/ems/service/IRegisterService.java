@@ -1,7 +1,9 @@
 package com.ci.ems.service;
 
-import com.ci.ems.model.EmployeeDTO;
+import org.springframework.stereotype.Service;
 
+import com.ci.ems.model.EmployeeDTO;
+@Service
 public interface IRegisterService {
 	public void register(EmployeeDTO empdto);
 	

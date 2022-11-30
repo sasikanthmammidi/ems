@@ -14,15 +14,13 @@ import com.ci.ems.service.RegisterServiceImpl;
 public class EmsRegistrationController extends BaseEmsController {
 
 	@Autowired
-	public IRegisterService iRegisterService;
-	@Autowired
 	public RegisterServiceImpl RegisterServiceImpl;
 
 	@PostMapping(value = "/register")
 	@ResponseBody public String registerEmployee(EmployeeDTO e)
 	
 	{
-		iRegisterService.register(e);
+		RegisterServiceImpl.register(e);
 		
 		return "success";
 	}

@@ -15,7 +15,7 @@ public class EmsApplication {
 
     public static void main(String[] args) throws Exception {
 
-        ConfigurableApplicationContext context = SpringApplication.run(EmsApplication.class, args);
+         SpringApplication.run(EmsApplication.class, args);
 
     }
 }
