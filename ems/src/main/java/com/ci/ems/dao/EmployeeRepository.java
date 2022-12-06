@@ -8,7 +8,7 @@ import org.springframework.stereotype.Repository;
 
 import com.ci.ems.model.EmployeeDTO;
 @Repository
-public interface EmployeeRepository extends MongoRepository<EmployeeDTO, String> {
+public interface EmployeeRepository extends MongoRepository<EmployeeDTO, Integer> {
     
     @Query("{name:'?0'}")
     EmployeeDTO findItemByName(String name);
